@@ -1,0 +1,44 @@
+/*************************\
+      secção de registo
+\*************************/
+.register__container{
+    width: 100%;
+    padding: 1rem 10rem;
+}
+
+.register__holder{
+    width: 100%;
+    position: relative;
+    margin: 6rem 0;
+}
+
+/*********************************\
+   secção do formulário registo
+\*********************************/
+.register__section{
+    width: 80%;
+    padding: 4rem 2rem;
+    background-color: var(--default-white);
+    margin: 0 auto;
+}
+
+.register__container-header{
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.register__title{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.register__data{
+    width: 100%;
+    margin: 2rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}

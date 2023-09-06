@@ -16,7 +16,7 @@
     formulário de login
 \*************************/
 .login__container{
-    width: 35%;
+    width: 45%;
     background-color: var(--default-white);
     margin: 0 auto;
     padding: 4rem 2rem;
@@ -55,11 +55,22 @@
 
 .login__user-data{
     width: 100%;
-    padding: 1rem;
+    padding: 1.2rem 1rem;
     border: solid .1rem var(--light-gray);
     border-radius: .3rem;
     outline: none;
-    font-size: var(--font-size12);
+    font-size: var(--font-size11);
+    transition: all .3s;
+}
+
+.login__user-data:focus{
+    border: solid .1rem var(--default-red);
+}
+
+.login__user-data::placeholder{
+    font-size: var(--font-size10);
+    opacity: 0;
+    transition: all .3s;
 }
 
 .input_icon{
@@ -70,6 +81,39 @@
 
 .input_icon i{
     font-size: var(--font-size12);
+}
+
+.account__label{
+    position: absolute;
+    transition: all .2s;
+    color: var(--default-red);
+    z-index: 1;
+    left: 10%;
+    top: 35%;
+    font-size: var(--font-size10);
+}
+
+.account__label::before{
+    content: "";
+    height: 1rem;
+    background-color: var(--default-white);
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    z-index: -1;
+    width: 100%;
+}
+
+.login__user-data:focus + .account__label , 
+.login__user-data:not(:placeholder-shown).login__user-data:not(:focus)~.account__label{
+    top:-16%;
+    color: var(--default-red);
+    font-size: var(--font-size10);
+}
+
+.login__user-data:focus::placeholder{
+    opacity: 1;
+    animation-delay: .2s;
 }
 
 .login__btn-container{
