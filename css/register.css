@@ -42,3 +42,22 @@
     position: relative;
     flex-direction: column;
 }
+
+.register__username-container{
+    width: 60%;
+    margin: 1rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input_icon{
+    position: absolute;
+    right: 10%;
+    color: var(--light-gray);
+}
+
+.input_icon i{
+    font-size: var(--font-size12);
+}

@@ -300,10 +300,10 @@
                 <div class="register__data">
                     <div class="register__username-container">
                         <span class="input_icon">
-                            <i class="material-icons">account</i>
+                            <i class="material-icons">person</i>
                         </span>
-                        <input type="email" placeholder="Insira o seu e-mail" required class="login__user-data" id="email" autocomplete="off">
-                        <label for="email" class="account__label">E-mail</label>
+                        <input type="text" placeholder="Insira o seu nome" required class="register__user-data" id="nome" autocomplete="off">
+                        <label for="nome" class="account__label">Nome</label>
                     </div>
                 </div>
             </div>
