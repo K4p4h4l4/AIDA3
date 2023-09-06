@@ -263,7 +263,7 @@
                                 <span class="cart__total-value" id="total">AOA 4.065.000</span>
                             </div>
                             <div class="cart__btn-container">
-                                <button class="cart__view">Ver carrinho</button>
+                                <button class="cart__view" onclick="location.href='carrinho.php'">Ver carrinho</button>
                                 <button class="cart__view">Finalizar Compra</button>
                             </div>
                         </div>

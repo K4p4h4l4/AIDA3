@@ -264,7 +264,7 @@
                             </div>
                             <div class="cart__btn-container">
                                 <button class="cart__view" id="cart__view" onclick="location.href='carrinho.php'">Ver carrinho</button>
-                                <button class="cart__view">Finalizar Compra</button>
+                                <button class="cart__view" onclick="location.href='checkout.php'">Finalizar Compra</button>
                             </div>
                         </div>
                     </div>

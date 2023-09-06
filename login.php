@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|PT+Serif|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"-->
-    <link rel="stylesheet" href="css/carrinho.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./img/logo/logo.JPG">
 </head>
@@ -263,7 +263,7 @@
                                 <span class="cart__total-value" id="total">AOA 4.065.000</span>
                             </div>
                             <div class="cart__btn-container">
-                                <button class="cart__view" >Ver carrinho</button>
+                                <button class="cart__view" onclick="location.href='carrinho.php'">Ver carrinho</button>
                                 <button class="cart__view" onclick="location.href='checkout.php'">Finalizar Compra</button>
                             </div>
                         </div>
@@ -279,7 +279,7 @@
     <div class="menu">
         <div class="menu__container">
             <ul class="nav__bar">
-                <li class="menu__btn-container"><a href="index.php" class="menu__btn active">Home</a></li>
+                <li class="menu__btn-container"><a href="index.php" class="menu__btn">Home</a></li>
                 <li class="menu__btn-container"><a href="promocao.php" class="menu__btn">Em promoção</a></li>
                 <li class="menu__btn-container"><a href="sobre.php" class="menu__btn">Sobre Nós</a></li>
                 <li class="menu__btn-container"><a href="contactos.php" class="menu__btn">Contacte-nos</a></li>
@@ -288,224 +288,43 @@
     </div>
     
     <!-- *****************************\
-        Secção de lista de carrinho
+        secção de formulário de login
     \******************************/-->
-    <section class="cart__container">
-        <div class="cart__table-holder">
-            <table>
-                <thead>
-                    <tr>
-                        <th>
-                            Produto
-                        </th>
-                        <th>
-                            Nome
-                        </th>
-                        <th>
-                            Preço
-                        </th>
-                        <th>
-                            Qtde
-                        </th>
-                        <th>
-                            Total
-                        </th>
-                        <th>
-                            <div class="cart__action">
-                                <i class="material-icons">settings</i>
-                            </div>
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td data-label="Produto">
-                            <a href="produto.php">
-                                <img src="./img/12-300x300.jpg" alt="">
-                            </a>
-                        </td>
-                        <td data-label="Nome">
-                            Sony beats
-                        </td>
-                        <td data-label="Preço">
-                            AOA 90.000
-                        </td>
-                        <td data-label="Qtde">
-                            <input type="number" min="1" value="1" class="qtde__number">
-                        </td>
-                        <td data-label="Total">
-                            AOA 90.000
-                        </td>
-                        <td>
-                            <a class="action__remove">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Produto">
-                            <a href="produto.php">
-                                <img src="./img/7-300x300.jpg" alt="">
-                            </a>
-                        </td>
-                        <td data-label="Nome">
-                            Apple Watch M4
-                        </td>
-                        <td data-label="Preço">
-                            AOA 350.000
-                        </td>
-                        <td data-label="Qtde">
-                            <input type="number" min="1" value="1" class="qtde__number">
-                        </td>
-                        <td data-label="Total">
-                            AOA 350.000
-                        </td>
-                        <td>
-                            <a class="action__remove">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Produto">
-                            <a href="produto.php">
-                                <img src="./img/1-300x300.jpg" alt="">
-                            </a>
-                            
-                        </td>
-                        <td data-label="Nome">
-                            Pie Headsets
-                        </td>
-                        <td data-label="Preço">
-                            AOA 35.000
-                        </td>
-                        <td data-label="Qtde">
-                            <input type="number" min="1" value="1" class="qtde__number">
-                        </td>
-                        <td data-label="Total">
-                            AOA 35.000
-                        </td>
-                        <td>
-                            <a class="action__remove">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Produto">
-                            <a href="produto.php">
-                                <img src="./img/product03.png" alt="">
-                            </a>                            
-                        </td>
-                        <td data-label="Nome">
-                            Macbook Pro
-                        </td>
-                        <td data-label="Preço">
-                            AOA 2.390.000
-                        </td>
-                        <td data-label="Qtde">
-                            <input type="number" min="1" value="1" class="qtde__number">
-                        </td>
-                        <td data-label="Total">
-                            AOA 2.390.000
-                        </td>
-                        <td>
-                            <a class="action__remove">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Produto">
-                            <a href="produto.php">
-                                <img src="./img/iPhone%20X.png" alt="">
-                            </a>                            
-                        </td>
-                        <td data-label="Nome">
-                            iPhone 14
-                        </td>
-                        <td data-label="Preço">
-                            AOA 1.200.000
-                        </td>
-                        <td data-label="Qtde">
-                            <input type="number" min="1" value="1" class="qtde__number">
-                        </td>
-                        <td data-label="Total">
-                            AOA 1.200.000
-                        </td>
-                        <td>
-                            <a class="action__remove">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-label="Produto">
-                            <a href="produto.php">
-                                <img src="./img/12-300x300.jpg" alt="">
-                            </a>                            
-                        </td>
-                        <td data-label="Nome">
-                            Sony beats
-                        </td>
-                        <td data-label="Preço">
-                            AOA 90.000
-                        </td>
-                        <td data-label="Qtde">
-                            <input type="number" min="1" value="1" class="qtde__number">
-                        </td>
-                        <td data-label="Total">
-                            AOA 90.000
-                        </td>
-                        <td>
-                            <a class="action__remove">
-                                <i class="material-icons">delete</i>
-                            </a>
-                        </td>
-                    </tr>
-                </tbody>
-                
-            </table>
-        </div>
-        
-        <div class="cart__totals">
-            <div class="cart__totals-table">
-                <div class="totals__resume-title">
-                    Resumo
+    <section class="login__section">
+        <div class="login__holder">
+            <div class="login__container">
+                <div class="login__container-header">
+                    <h2 class="login__title">Entrar na minha conta</h2>
+                    <p>Digite o seu email e senha</p>
                 </div>
-                <div class="subtotals__holder">
-                    <div class="subtotals__title">
-                        Subtotal
+                <div class="login__data">
+                    <div class="login__username-container">
+                        <span class="input_icon">
+                            <i class="material-icons">email</i>
+                        </span>
+                        <input type="email" placeholder="E-mail" required class="login__user-data">
                     </div>
-                    <div class="subtotals__number">
-                        AOA 4.155.000,00
+                    <div class="login__username-container">
+                        <span class="input_icon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <input type="password" placeholder="Senha" required class="login__user-data">
                     </div>
                 </div>
-                <div class="shippement__holder">
-                    <div class="shippement__title">
-                        Entrega
-                    </div>
-                    <div class="shippement__number">
-                        AOA 3.000
-                    </div>
+                <div class="login__btn-container">
+                    <button class="btn__login">Login</button>
                 </div>
-                <div class="totals__holder">
-                    <div class="totals__title">
-                        Total
+                <div class="other__options">
+                    <div class="other__option">
+                        <p>Novo Cliente? <a href="#">Crie a sua conta</a></p>
                     </div>
-                    <div class="totals__number">
-                        AOA 4.158.000,00
+                    <div class="other__option">
+                        <p>Esqueceu a senha? <a href="#">Recupere sua senha</a></p>
                     </div>
-                </div>
-                <div class="cart__buttons-holder">
-                    <button class="button__actions" onclick="location.href='index.php'"> <i class="material-icons">arrow_back</i> Continuar a comprar</button>
-                    <button class="button__actions"> <i class="material-icons">article</i> Consultar preço</button>
-                    <button class="button__actions" onclick="location.href='checkout.php'"> <i class="material-icons">done</i> Finalizar compra</button>
                 </div>
             </div>
         </div>
     </section>
-    
     
     
     <!-- *****************************\
@@ -602,7 +421,6 @@
         </div>
     </div>
     
-    <!--script src="./js/home.js"></script-->
     <script src="js/default.js"></script>
 </body>
 
