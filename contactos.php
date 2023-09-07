@@ -321,6 +321,15 @@
                             <div class="contact__text-p">Zango 0, Vila Chinesa</div>
                         </div>
                     </div>
+                    <div class="contact__company-holder">
+                        <div class="contact__company-icon">
+                            <i class="material-icons">location_on</i>
+                        </div>
+                        <div class="contact__company-text">
+                            <div class="company__text-title">Endereço</div>
+                            <div class="contact__text-p">Zango 0, Vila Chinesa</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact__user-info">
                     

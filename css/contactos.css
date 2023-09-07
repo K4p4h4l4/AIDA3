@@ -3,27 +3,30 @@
 \*************************/
 .contacts__section{
     width: 100%;
-    padding: 1rem 10rem;
+    padding: 7rem 10rem;
+    position: relative;
 }
 
 .contacts__holder{
-    width: 100%;
+    width: 70%;
     position: relative;
-    margin: 6rem 0;
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: var(--default-white);
+    
 }
 
 /*************************\
       Contactos Título
 \*************************/
 .contact__header-holder{
-    width: 70%;
-    background-color: var(--default-white);
+    width: 100%;
     margin: 0 auto;
 }
 
 .contact__header-title{
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 .contact__title{
@@ -48,14 +51,14 @@
    Contactos da empresa
 \*************************/
 .contacts__info-holder{
-    width: 70%;
+    width: 100%;
     background-color: var(--default-white);
     margin: 0 auto;
 }
 
 .contact__company-info{
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -65,4 +68,36 @@
     width: 50%;
     margin: 2rem 0;
     display: flex;
+    align-items: center;
+}
+
+.contact__company-icon{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--default-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+}
+
+.contact__company-icon i{
+    color: var(--default-white);
+}
+
+.contact__company-text{
+    width: 60%;
+}
+
+.company__text-title{
+    width: 100%;
+    font-size: var(--font-size14);
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.contact__text-p{
+    width: 100%;
+    font-size: var(--font-size12);
 }
