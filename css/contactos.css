@@ -33,6 +33,7 @@
     width: 100%;
     font-size: var(--font-size30);
     padding: 2rem 0;
+    font-weight: 900;
 }
 
 .contact__subtitle{
@@ -54,18 +55,19 @@
     width: 100%;
     background-color: var(--default-white);
     margin: 0 auto;
+    display: flex;
 }
 
 .contact__company-info{
-    width: 100%;
+    width: 50%;
     padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .contact__company-holder{
-    width: 50%;
+    width: 100%;
     margin: 2rem 0;
     display: flex;
     align-items: center;
@@ -100,4 +102,135 @@
 .contact__text-p{
     width: 100%;
     font-size: var(--font-size12);
+}
+
+/****************************\
+   Css Contactos de usuário
+\****************************/
+.contact__user-info{
+    width: 50%;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contact__username-container{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.input_icon{
+    position: absolute;
+    right: 10%;
+    color: var(--light-gray);
+}
+
+.input_icon i{
+    font-size: var(--font-size12);
+}
+
+.contact__user-data{
+    width: 100%;
+    padding: 1.2rem 1rem;
+    border: solid .1rem var(--light-gray);
+    border-radius: .3rem;
+    outline: none;
+    font-size: var(--font-size11);
+    transition: all .1s;
+}
+
+.contact__user-data:focus, .contact__comments:focus{
+    border: solid .12rem var(--default-black);
+}
+
+.contact__user-data::placeholder, .contact__comments::placeholder{
+    font-size: var(--font-size10);
+    opacity: 0;
+    transition: all .3s;
+}
+
+.account__label{
+    position: absolute;
+    transition: all .2s;
+    color: var(--default-black);
+    z-index: 1;
+    left: 10%;
+    top: 35%;
+    font-size: var(--font-size10);
+}
+
+.account__label::before{
+    content: "";
+    height: 1rem;
+    background-color: var(--default-white);
+    position: absolute;
+    left: 0%;
+    top: 40%;
+    z-index: -1;
+    width: 100%;
+}
+
+.contact__user-data:focus + .account__label , 
+.contact__user-data:not(:placeholder-shown).contact__user-data:not(:focus)~.account__label{
+    top:-16%;
+    color: var(--default-black);
+    font-size: var(--font-size10);
+}
+
+.contact__user-data:focus::placeholder, .contact__comments:focus::placeholder{
+    opacity: 1;
+    animation-delay: .2s;
+}
+
+.contact__comments:focus + .account__label , 
+.contact__comments:not(:placeholder-shown).contact__comments:not(:focus)~.account__label{
+    top:-8%;
+    color: var(--default-black);
+    font-size: var(--font-size10);
+}
+
+.contact__comments{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .3rem;
+    font-size: var(--font-size11);
+    border: solid .1rem var(--light-gray);
+    outline: none;
+}
+
+.contact__sendsms-container{
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.button__shipping{
+    width: 40%;
+    padding: 1rem;
+    border-radius: .3rem;
+    border: none;
+    background-color: var(--default-black);
+    color: var(--default-white);
+    font-size: var(--font-size10);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button__shipping:hover{
+    background-color: var(--default-red);
+}
+
+.button__shipping i{
+    font-size: var(--font-size10);
+    margin-right: .5rem;
 }

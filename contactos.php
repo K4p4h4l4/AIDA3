@@ -323,16 +323,54 @@
                     </div>
                     <div class="contact__company-holder">
                         <div class="contact__company-icon">
-                            <i class="material-icons">location_on</i>
+                            <i class="material-icons">phone</i>
                         </div>
                         <div class="contact__company-text">
-                            <div class="company__text-title">Endereço</div>
-                            <div class="contact__text-p">Zango 0, Vila Chinesa</div>
+                            <div class="company__text-title">Telefone</div>
+                            <div class="contact__text-p">+244-923-695-077</div>
+                        </div>
+                    </div>
+                    <div class="contact__company-holder">
+                        <div class="contact__company-icon">
+                            <i class="material-icons">mail</i>
+                        </div>
+                        <div class="contact__company-text">
+                            <div class="company__text-title">E-mail</div>
+                            <div class="contact__text-p">geral@aida.ao</div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="contact__user-info">
+                    <div class="contact__username-container">
+                        <span class="input_icon">
+                            <i class="material-icons">person</i>
+                        </span>
+                        <input type="text" placeholder="Insira o seu nome" required class="contact__user-data" id="nome" autocomplete="off">
+                        <label for="nome" class="account__label">Nome</label>
+                    </div>
                     
+                    <div class="contact__username-container">
+                        <span class="input_icon">
+                            <i class="material-icons">email</i>
+                        </span>
+                        <input type="email" placeholder="Insira o seu e-mail" required class="contact__user-data" id="email" autocomplete="off">
+                        <label for="email" class="account__label">E-mail</label>
+                    </div>
+                    <div class="contact__username-container">
+                        <span class="input_icon">
+                            <i class="material-icons">border_color</i>
+                        </span>
+                        <input type="text" placeholder="Insira o assunto" required class="contact__user-data" id="assunto" autocomplete="off">
+                        <label for="assunto" class="account__label">Assunto</label>
+                    </div>
+                    <div class="contact__username-container">
+                        <textarea name="contact__comments" id="" cols="5" rows="5" class="contact__comments" placeholder="Escreva suas dúvidas aqui" id="mensagem"></textarea>
+                        <label for="mensagem" class="account__label">Mensagem</label>
+                    </div>
+                    <div class="contact__sendsms-container">
+                        <button class="button__shipping" onclick="location.href='envio.php'"><i class="material-icons">send</i> Enviar</button>
+                    </div>
                 </div>
             </div>
             

@@ -1,4 +1,9 @@
 /*******************\
+      Imports
+\*******************/
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*******************\
       Variables
 \*******************/
 
@@ -54,7 +59,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: inherit;
-    font-family:  "Raleway", montserrat, 'Roboto', 'Nunito', sans-serif;
+    font-family:  'Spartan', "Raleway", montserrat, 'Roboto', 'Nunito', sans-serif;
 }
 
 body{
