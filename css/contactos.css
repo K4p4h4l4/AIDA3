@@ -1,0 +1,68 @@
+/*************************\
+     secção de contactos
+\*************************/
+.contacts__section{
+    width: 100%;
+    padding: 1rem 10rem;
+}
+
+.contacts__holder{
+    width: 100%;
+    position: relative;
+    margin: 6rem 0;
+}
+
+/*************************\
+      Contactos Título
+\*************************/
+.contact__header-holder{
+    width: 70%;
+    background-color: var(--default-white);
+    margin: 0 auto;
+}
+
+.contact__header-title{
+    width: 100%;
+    padding: 2rem;
+}
+
+.contact__title{
+    width: 100%;
+    font-size: var(--font-size30);
+    padding: 2rem 0;
+}
+
+.contact__subtitle{
+    width: 100%;
+    margin: 1.5rem 0;
+    font-size: var(--font-size17);
+}
+
+.contact__p{
+    width: 100%;
+    font-size: var(--font-size15);
+    margin: 1.5rem 0;
+}
+
+/*************************\
+   Contactos da empresa
+\*************************/
+.contacts__info-holder{
+    width: 70%;
+    background-color: var(--default-white);
+    margin: 0 auto;
+}
+
+.contact__company-info{
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact__company-holder{
+    width: 50%;
+    margin: 2rem 0;
+    display: flex;
+}

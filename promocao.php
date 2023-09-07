@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|PT+Serif|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"-->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/promocao.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./img/logo/logo.JPG">
 </head>
@@ -291,7 +291,6 @@
             </ul>
         </div>
     </div>
-    
     
     <!-- *****************************\
              Footer

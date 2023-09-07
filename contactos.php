@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|PT+Serif|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"-->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/contactos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./img/logo/logo.JPG">
 </head>
@@ -292,6 +292,46 @@
         </div>
     </div>
     
+    
+    <!-- *****************************\
+             secção de contactos
+    \******************************/-->
+    <section class="contacts__section">
+        <div class="contacts__holder">
+           
+            <!-- *****************************\
+                         Contactos
+            \******************************/-->
+            <div class="contact__header-holder">
+                <div class="contact__header-title">
+                    <h2 class="contact__title">Contactos</h2>
+                    <h3 class="contact__subtitle">Alguma dúvida sobre a compra de uma solução ou item na qual está interessado?</h3>
+                    <p class="contact__p">Estamos disponíveis para ajudar</p>
+                </div>
+            </div>
+            
+            <div class="contacts__info-holder">
+                <div class="contact__company-info">
+                    <div class="contact__company-holder">
+                        <div class="contact__company-icon">
+                            <i class="material-icons">location_on</i>
+                        </div>
+                        <div class="contact__company-text">
+                            <div class="company__text-title">Endereço</div>
+                            <div class="contact__text-p">Zango 0, Vila Chinesa</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__user-info">
+                    
+                </div>
+            </div>
+            
+            <div class="contacts__map-holder">
+                
+            </div>
+        </div>
+    </section>
     
     <!-- *****************************\
              Footer
