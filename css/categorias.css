@@ -82,13 +82,13 @@
 }
 
 .product__card{
-    width: 23%;
+    width: 22%;
     position: relative;
     background-color: var(--default-white);
     border-radius: 1rem;
     overflow: hidden;
     transition: all .3s ease;
-    margin: 1.5rem .5rem;
+    margin: 1.5rem 1rem;
 }
 
 .product__card:hover{

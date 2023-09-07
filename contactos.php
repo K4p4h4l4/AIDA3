@@ -7,11 +7,20 @@
     <title>AIDA - Loja Online de Tecnologia</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|PT+Serif|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"-->
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./img/logo/logo.JPG">
 </head>
 
 <body>
+    
+    <!-- *******************\
+             button menu
+    \*******************/-->
+    <button class="menu__button">
+        <i class="material-icons">list</i>
+    </button>
 
     <!-- *******************\
              Topo
@@ -34,7 +43,12 @@
         <div class="info__header-account">
             <div class="header__contact">
                 <i class="material-icons">account_circle</i>
-                <span>Registar</span>
+                <span>
+                    <a href="register.php">Registar</a>
+                </span>
+                <span>
+                    <a href="login.php">Login</a>
+                </span>
             </div>
         </div>
     </div>
@@ -55,32 +69,210 @@
                     <option value="2">Tv box</option>
                     <option value="3">Smartphones e Tablets</option>
                     <option value="4">Consumíveis e Papel</option>
+                    <option value="4">Jogos e Consola</option>
+                    <option value="4">Impressoras e Scaners</option>
                 </select>
                 <input type="text" class="search__text" placeholder="Procurar aqui">
-                <button class="search-btn">Procurar</button>
+                <button class="search-btn"> <i class="material-icons">search</i> </button>
             </div>
         </div>
 
+        <!-- *****************************\
+              Lista de desejos e compras
+        \******************************/-->
         <div class="my__interests-wishes">
             <div class="interests__wishes">
+               
+                <!-- *****************************\
+                         Lista de desejos
+                \******************************/-->
                 <div class="wishes__content">
                     <div class="wishes__number">
-                        <span>1</span>
+                        <span>2</span>
                     </div>
-                    <a href="" class="wishes__content-btn">
-                        <i class="material-icons">favorite</i>
+                    <a href="#" class="wishes__content-btn" id="products__wish">
+                        <i class="material-icons">favorite_border</i>
                         <span>Desejos</span>
                     </a>
+                    
+                    <!-- ************************************\
+                          Lista de produtos das compras
+                    \*************************************/--> 
+                    <div class="wish__list-holder">
+                        <div class="wish__list-container">
+                            <div class="wish__list-card">
+                                <div class="wish__list-img">
+                                    <img src="./img/13-300x300.jpg" alt="">
+                                </div>
+                                <div class="wish__txt-container">
+                                    <div class="wish__poduct-name">
+                                        <span>Samsung LED TV</span>
+                                    </div>
+                                    <div class="wish__product-price">
+                                        <div class="wish__product-qtde">
+                                            <span>1</span>X
+                                        </div>
+                                        <span>AOA 890.000</span>
+                                    </div>   
+                                </div>
+                                <div class="wish__close-btn">
+                                    +
+                                </div>
+                            </div>
+                            
+                            <div class="wish__list-card">
+                                <div class="wish__list-img">
+                                    <img src="./img/33-300x300.jpg" alt="">
+                                </div>
+                                <div class="wish__txt-container">
+                                    <div class="wish__poduct-name">
+                                        <span>Fujifilm Instax Mini</span>
+                                    </div>
+                                    <div class="wish__product-price">
+                                        <div class="wish__product-qtde">
+                                            <span>1</span>X
+                                        </div>
+                                        <span>AOA 90.000</span>
+                                    </div>   
+                                </div>
+                                <div class="wish__close-btn">
+                                    +
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="wish__btn-holder">
+                            <div class="wish__btn-container">
+                                <button class="wish__view">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- *****************************\
+                         Lista de compras
+                \******************************/-->
                 <div class="wishes__content">
                     <div class="wishes__number">
-                        <span>3</span>
+                        <span>6</span>
                     </div>
-                    <a href="" class="wishes__content-btn">
-                        <i class="material-icons">shopping_cart</i>
+                    <a href="#" class="wishes__content-btn" id="products__cart">
+                        <i class="material-icons">local_grocery_store</i>
                         <span>Carrinho</span>
                     </a>
+                     
+                    <!-- ************************************\
+                          Lista de produtos das compras
+                    \*************************************/--> 
+                    <div class="cart__list-holder">
+                        <div class="cart__list-container">
+                            <div class="cart__list-card">
+                                <div class="cart__list-img">
+                                    <img src="./img/12-300x300.jpg" alt="">
+                                </div>
+                                <div class="cart__txt-container">
+                                    <div class="cart__poduct-name">
+                                        <span>Sony Beats</span>
+                                    </div>
+                                    <div class="cart__product-price">
+                                        <div class="cart__product-qtde">
+                                            <span>1</span>X
+                                        </div>
+                                        <span>AOA 90.000</span>
+                                    </div>   
+                                </div>
+                                <div class="cart__close-btn">
+                                    +
+                                </div>
+                            </div>
+                            <div class="cart__list-card">
+                                <div class="cart__list-img">
+                                    <img src="./img/7-300x300.jpg" alt="">
+                                </div>
+                                <div class="cart__txt-container">
+                                    <div class="cart__poduct-name">
+                                        <span>Apple Watch M4</span>
+                                    </div>
+                                    <div class="cart__product-price">
+                                        <div class="cart__product-qtde">
+                                            <span>1</span>X
+                                        </div>
+                                        <span>AOA 350.000</span>
+                                    </div>   
+                                </div>
+                                <div class="cart__close-btn">
+                                    +
+                                </div>
+                            </div>
+                            <div class="cart__list-card">
+                                <div class="cart__list-img">
+                                    <img src="./img/1-300x300.jpg" alt="">
+                                </div>
+                                <div class="cart__txt-container">
+                                    <div class="cart__poduct-name">
+                                        <span>Pie Headsets</span>
+                                    </div>
+                                    <div class="cart__product-price">
+                                        <div class="cart__product-qtde">
+                                            <span>1</span>X
+                                        </div>
+                                        <span>AOA 35.000</span>
+                                    </div>   
+                                </div>
+                                <div class="cart__close-btn">
+                                    +
+                                </div>
+                            </div>
+                            <div class="cart__list-card">
+                                <div class="cart__list-img">
+                                    <img src="./img/product03.png" alt="">
+                                </div>
+                                <div class="cart__txt-container">
+                                    <div class="cart__poduct-name">
+                                        <span>Macbook Pro</span>
+                                    </div>
+                                    <div class="cart__product-price">
+                                        <div class="cart__product-qtde">
+                                            <span>1</span>X
+                                        </div>
+                                        <span>AOA 2.390.000</span>
+                                    </div>   
+                                </div>
+                                <div class="cart__close-btn">
+                                    +
+                                </div>
+                            </div>
+                            <div class="cart__list-card">
+                                <div class="cart__list-img">
+                                    <img src="./img/iPhone%20X.png" alt="">
+                                </div>
+                                <div class="cart__txt-container">
+                                    <div class="cart__poduct-name">
+                                        <span>iPhone 14</span>
+                                    </div>
+                                    <div class="cart__product-price">
+                                        <div class="cart__product-qtde">
+                                            <span>1</span>X
+                                        </div>
+                                        <span>AOA 1.200.000</span>
+                                    </div>   
+                                </div>
+                                <div class="cart__close-btn">
+                                    +
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__btn-holder">
+                            <div class="cart__total-container">
+                                <span class="cart__total-txt">Valor Total:</span>
+                                <span class="cart__total-value" id="total">AOA 4.065.000</span>
+                            </div>
+                            <div class="cart__btn-container">
+                                <button class="cart__view" onclick="location.href='carrinho.php'">Ver carrinho</button>
+                                <button class="cart__view" onclick="location.href='checkout.php'">Finalizar Compra</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -95,7 +287,7 @@
                 <li class="menu__btn-container"><a href="index.php" class="menu__btn">Home</a></li>
                 <li class="menu__btn-container"><a href="promocao.php" class="menu__btn">Em promoção</a></li>
                 <li class="menu__btn-container"><a href="sobre.php" class="menu__btn">Sobre Nós</a></li>
-                <li class="menu__btn-container"><a href="#" class="menu__btn active">Contacte-nos</a></li>
+                <li class="menu__btn-container"><a href="contactos.php" class="menu__btn active">Contacte-nos</a></li>
             </ul>
         </div>
     </div>
@@ -189,12 +381,13 @@
     <!-- *****************************\
              Footer bottom
     \******************************/-->
-    <div class="footer__botoom">
+    <div class="footer__bottom">
         <div class="footer__bottom-details">
             <span>© 2023 AIDA - Advanced Internet Design Angola™ . Todos os Direitos Reservados</span>
         </div>
     </div>
-    <script src=""></script>
+    
+    <script src="js/default.js"></script>
 </body>
 
 </html>

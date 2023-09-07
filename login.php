@@ -43,7 +43,12 @@
         <div class="info__header-account">
             <div class="header__contact">
                 <i class="material-icons">account_circle</i>
-                <span>Registar</span>
+                <span>
+                    <a href="register.php">Registar</a>
+                </span>
+                <span>
+                    <a href="#">Login</a>
+                </span>
             </div>
         </div>
     </div>

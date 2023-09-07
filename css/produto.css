@@ -617,19 +617,20 @@
     width: 100%;
     margin: 1rem 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .product__card{
-    width: 23%;
+    width: 22%;
     position: relative;
     background-color: var(--default-white);
     border-radius: 1rem;
     overflow: hidden;
     transition: all .3s ease;
-    margin: 1.5rem 0;
+    margin: 1.5rem 1rem;
+    cursor: pointer;
 }
 
 .product__card:hover{
