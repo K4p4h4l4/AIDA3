@@ -303,8 +303,11 @@
             <div class="about__header-holder">
                 <div class="about__header-title">
                     <h2 class="about__title">Sobre Nós</h2>
-                    <h3 class="about__subtitle">Alguma dúvida sobre a compra de uma solução ou item na qual está interessado?</h3>
-                    <p class="about__p">Estamos disponíveis para ajudar</p>
+                </div>                
+            </div>
+            <div class="about__info-holder">
+                <div class="about__company-holder">
+                    <img src="img/igor-miske-Px3iBXV-4TU-unsplash.jpg" alt="">
                 </div>
             </div>
         </div>

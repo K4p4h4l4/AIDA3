@@ -45,3 +45,30 @@
     font-size: var(--font-size15);
     margin: 1.5rem 0;
 }
+
+/*************************\
+   Con da empresa
+\*************************/
+.about__info-holder{
+    width: 50%;
+    background-color: var(--default-white);
+    margin: 0 auto;
+    display: flex;
+}
+
+.about__img-info{
+    width: 50%;
+    padding: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.about__company-holder{
+    width: 100%;
+}
+
+.about__company-holder img{
+    width: 100%;
+    object-fit: cover;
+}
