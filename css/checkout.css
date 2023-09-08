@@ -43,6 +43,8 @@
     object-fit: cover;
 }
 
+
+
 .checkout__information-details{
     width: 100%;
     padding: 1rem 0;
@@ -63,10 +65,15 @@
 
 .information__link{
     text-decoration: none;
-    font-size: var(--font-size9);
+    font-size: var(--font-size11 );
     outline: none;
     display: flex;
     align-items: center;
+    color: var(--default-black);
+}
+
+a:visited{
+    color: var(--default-black);
 }
 
 .information__link i{
@@ -84,7 +91,7 @@
 
 .contact__header{
     width: 100%;
-    font-size: var(--font-size11);
+    font-size: var(--font-size13);
     font-weight: bold;
     margin-bottom: .8rem;
 }
@@ -99,7 +106,7 @@
     padding: 1rem;
     border-radius: .3rem;
     border: solid .1rem var(--dark-gray);
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
 }
 
 .contact__deliver{
@@ -122,7 +129,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: var(--font-size8);
+    font-size: var(--font-size10);
 }
 
 .deliver__text-holder i{
@@ -139,7 +146,7 @@
     width: 100%;
     padding: 1rem;
     border-radius: .3rem;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     border: solid .1rem var(--dark-gray);
 }
 
@@ -155,7 +162,7 @@
     width: 49%;
     padding: 1rem;
     border-radius: .3rem;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     border: solid .1rem var(--dark-gray);
 }
 
@@ -168,7 +175,7 @@
     width: 100%;
     padding: 1rem;
     border-radius: .3rem;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     border: solid .1rem var(--dark-gray);
 }
 
@@ -183,16 +190,16 @@
     padding: 1rem;
     border-radius: .3rem;
     border: none;
-    background-color: var(--default-red);
+    background-color: var(--default-black);
     color: var(--default-white);
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
 .button__shipping:hover{
-    background-color: var(--default-black);
+    background-color: var(--default-red);
 }
 
 .button__shipping i{
@@ -208,7 +215,7 @@
     width: 100%;
     padding: 1rem;
     border-radius: .3rem;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     border: solid .1rem var(--dark-gray);
 }
 /*****************************\
@@ -269,14 +276,14 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     margin-right: .5rem;
     font-weight: bold;
 }
 
 .product__card-price{
     width: 35%;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     text-align: right;
 }
 
@@ -295,12 +302,12 @@
 
 .subtotal__text-holder{
     width: 50%;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
 }
 
 .subtotal__price-holder{
     width: 50%;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     text-align: end;
     font-weight: 700;
 }
@@ -315,13 +322,13 @@
 
 .total__text-holder{
     width: 50%;
-    font-size: var(--font-size12);
+    font-size: var(--font-size14);
     font-weight: 700;
 }
 
 .total__price-holder{
     width: 50%;
-    font-size: var(--font-size12);
+    font-size: var(--font-size14);
     text-align: end;
     font-weight: 700;
 }

@@ -140,12 +140,12 @@
     border: solid .1rem var(--light-gray);
     border-radius: .3rem;
     outline: none;
-    font-size: var(--font-size11);
+    font-size: var(--font-size13);
     transition: all .1s;
 }
 
 .contact__user-data:focus, .contact__comments:focus{
-    border: solid .12rem var(--default-black);
+    border: solid .15rem var(--default-black);
 }
 
 .contact__user-data::placeholder, .contact__comments::placeholder{
@@ -161,7 +161,7 @@
     z-index: 1;
     left: 10%;
     top: 35%;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
 }
 
 .account__label::before{
@@ -177,7 +177,7 @@
 
 .contact__user-data:focus + .account__label , 
 .contact__user-data:not(:placeholder-shown).contact__user-data:not(:focus)~.account__label{
-    top:-16%;
+    top:-10%;
     color: var(--default-black);
     font-size: var(--font-size10);
 }
@@ -219,7 +219,7 @@
     border: none;
     background-color: var(--default-black);
     color: var(--default-white);
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -233,4 +233,64 @@
 .button__shipping i{
     font-size: var(--font-size10);
     margin-right: .5rem;
+}
+
+/****************************\
+           Mapa
+\****************************/
+.contacts__map-holder{
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+
+/********************************************************\
+  Responsividade para tablets e pcs com baixa resolução 
+\********************************************************/
+@media only screen and (max-width:1200px){
+    /*************************\
+         secção de contactos
+    \*************************/
+    .contacts__section{
+        padding: 7rem 5rem;
+    }
+    
+    .contacts__holder{
+        width: 75%;
+    }
+}
+
+/*********************************************\
+         Responsividade para telemóvel
+\*********************************************/
+@media only screen and (max-width:700px){
+    /*************************\
+         secção de contactos
+    \*************************/
+    .contacts__section{
+        padding: 4rem 1rem;
+    }
+    
+    .contacts__holder{
+        width: 100%;
+    }
+    
+    /*************************\
+       Contactos da empresa
+    \*************************/
+    .contacts__info-holder{
+        flex-direction: column;
+    }
+    
+    .contact__company-info{
+        width: 100%;
+    }
+    
+    /****************************\
+       Css Contactos de usuário
+    \****************************/
+    .contact__user-info{
+        width: 100%;
+    }
 }

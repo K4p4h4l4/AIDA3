@@ -20,7 +20,6 @@ table{
     border-collapse: collapse;
     border-spacing: 2rem;
     display: table;
-    border-color: red;
     text-indent: initial;
 }
 
@@ -38,7 +37,7 @@ tr {
 
 tr th {
     text-transform: capitalize;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     font-weight: bold;
     display: table-cell;
     vertical-align: inherit;
@@ -52,7 +51,7 @@ th, td {
 
 tbody th, td {
     text-align: center;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     cursor: default;
 }
 
@@ -108,7 +107,7 @@ td img{
 .totals__resume-title{
     width: 100%;
     padding: 1rem;
-    font-size: var(--font-size12);
+    font-size: var(--font-size14);
     font-weight: 700;
     border: solid 0.1rem var(--dark-gray);
     text-transform: capitalize;
@@ -124,7 +123,7 @@ td img{
 .subtotals__title, .shippement__title, .totals__title{
     width: 50%;
     padding: 1rem;
-    font-size: var(--font-size11);
+    font-size: var(--font-size13);
     text-transform: capitalize;
     text-align: left;
     cursor: default;
@@ -133,7 +132,7 @@ td img{
 .totals__title{
     width: 50%;
     padding: 1rem;
-    font-size: var(--font-size12);
+    font-size: var(--font-size14);
     text-transform: capitalize;
     text-align: left;
     cursor: default;
@@ -143,7 +142,7 @@ td img{
 .subtotals__number, .shippement__number{
     width: 50%;
     padding: 1rem;
-    font-size: var(--font-size11);
+    font-size: var(--font-size13);
     text-transform: capitalize;
     text-align: right;
     font-weight: 550;
@@ -152,7 +151,7 @@ td img{
 .totals__number{
     width: 50%;
     padding: 1rem;
-    font-size: var(--font-size12);
+    font-size: var(--font-size14);
     text-transform: capitalize;
     text-align: right;
     font-weight: bolder;
@@ -167,19 +166,19 @@ td img{
 
 .button__actions{
     border: none;
-    background-color: var(--default-red);
+    background-color: var(--default-black);
     color: var(--default-white);
     padding: .8rem 1rem;
     margin-left: 1rem;
     border-radius: .4rem;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     cursor: pointer;
     display: flex;
     align-items: center;
 }
 
 .button__actions:hover{
-    background-color: var(--default-black);
+    background-color: var(--default-red);
 }
 
 .button__actions i{

@@ -439,7 +439,7 @@
                                </div>
                                <div class="service__terms">
                                    <div class="deliver__radio-holder">
-                                       <input type="checkbox" id="terms" class="information__radio">
+                                       <input type="checkbox" id="terms" class="information__checkbox">
                                    </div>
                                    <div class="service__terms-text">
                                        <p>Eu concordo e aceito incondicionalmente os termos de serviço. <a href="#" class="open__terms-modal">(ver termos de serviço)</a></p> 

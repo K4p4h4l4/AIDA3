@@ -138,8 +138,12 @@
     text-decoration: none;
 }
 
+.product__details a:visited{
+    color: var(--default-black);
+}
+
 .product__details span{
-    font-size: var(--font-size12);
+    font-size: var(--font-size14);
 }
 
 .rating{
@@ -174,7 +178,7 @@
 
 .product__price{
     font-weight: 700;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     margin-right: 1rem;
 }
 

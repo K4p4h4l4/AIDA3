@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|PT+Serif|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"-->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/sobrenos.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="./img/logo/logo.JPG">
 </head>
@@ -292,6 +292,23 @@
         </div>
     </div>
     
+    <!-- *****************************\
+             Secção sobre nós
+    \******************************/-->
+    <section class="aboutUs__section">
+        <div class="aboutUs__container">
+            <!-- *****************************\
+                         Sobre Nós
+            \******************************/-->
+            <div class="about__header-holder">
+                <div class="about__header-title">
+                    <h2 class="about__title">Sobre Nós</h2>
+                    <h3 class="about__subtitle">Alguma dúvida sobre a compra de uma solução ou item na qual está interessado?</h3>
+                    <p class="about__p">Estamos disponíveis para ajudar</p>
+                </div>
+            </div>
+        </div>
+    </section>
     
     <!-- *****************************\
              Footer

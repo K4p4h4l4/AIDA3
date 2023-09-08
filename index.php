@@ -1332,6 +1332,7 @@
                         <label for="Quantidade">Qtde:</label>
                         <input type="number" min="0" value="1" max="100">
                         <button class="modal__product-cart">
+                            <i class="material-icons">shopping_cart</i>
                             Adicionar ao carrinho
                         </button>
                     </div>
