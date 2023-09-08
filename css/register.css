@@ -26,11 +26,13 @@
     width: 100%;
     margin-bottom: 2rem;
     text-align: center;
+    font-size: var(--font-size14);
 }
 
 .register__title{
     width: 100%;
     margin-bottom: 1rem;
+    font-size: var(--font-size18);
 }
 
 .register__data{
@@ -80,11 +82,11 @@
 }
 
 .register__user-data:focus{
-    border: solid .1rem var(--default-red);
+    border: solid .1rem var(--default-black);
 }
 
 .register__user-data::placeholder{
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     opacity: 0;
     transition: all .3s;
 }
@@ -92,11 +94,11 @@
 .account__label{
     position: absolute;
     transition: all .2s;
-    color: var(--default-red);
+    color: var(--default-black);
     z-index: 1;
     left: 10%;
     top: 35%;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
 }
 
 .account__label::before{
@@ -113,7 +115,7 @@
 .register__user-data:focus + .account__label , 
 .register__user-data:not(:placeholder-shown).register__user-data:not(:focus)~.account__label{
     top:-16%;
-    color: var(--default-red);
+    color: var(--default-black);
     font-size: var(--font-size10);
 }
 
@@ -141,16 +143,16 @@
     border: solid .1rem var(--light-gray);
     border-radius: .3rem;
     outline: none;
-    font-size: var(--font-size11);
+    font-size: var(--font-size13);
     transition: all .3s;
 }
 
 .register__address-data:focus{
-    border: solid .1rem var(--default-red);
+    border: solid .1rem var(--default-black);
 }
 
 .register__address-data::placeholder{
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
     opacity: 0;
     transition: all .3s;
 }
@@ -158,11 +160,11 @@
 .account__label{
     position: absolute;
     transition: all .2s;
-    color: var(--default-red);
+    color: var(--default-black);
     z-index: 1;
     left: 10%;
     top: 35%;
-    font-size: var(--font-size10);
+    font-size: var(--font-size12);
 }
 
 .account__label::before{
@@ -200,23 +202,24 @@
 .btn__login{
     width: 50%;
     border: none;
-    background-color: var(--default-red);
+    background-color: var(--default-black);
     color: var(--default-white);
     border-radius: .3rem;
     padding: 1rem 0;
-    font-size: var(--font-size12);
+    font-size: var(--font-size14);
     cursor: pointer;
     font-weight: 700;
 }
 
 .btn__login:hover{
-    background-color: var(--default-black);
+    background-color: var(--default-red);
 }
 
 .other__options{
     width: 100%;
     text-align: center;
     line-height: 2rem;
+    font-size: var(--font-size11);
 }
 
 .other__options p a{
