@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /*************************\
      secção de contactos
 \*************************/
@@ -55,22 +62,34 @@
     width: 100%;
     background-color: var(--default-white);
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
 .contact__company-info{
     width: 50%;
     padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .contact__company-holder{
     width: 100%;
     margin: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .contact__company-icon{
@@ -78,9 +97,15 @@
     height: 5rem;
     border-radius: 50%;
     background-color: var(--default-black);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-right: 2rem;
 }
 
@@ -110,17 +135,29 @@
 .contact__user-info{
     width: 50%;
     padding: 2rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .contact__username-container{
     width: 100%;
     margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     position: relative;
 }
 
@@ -141,6 +178,8 @@
     border-radius: .3rem;
     outline: none;
     font-size: var(--font-size13);
+    -webkit-transition: all .1s;
+    -o-transition: all .1s;
     transition: all .1s;
 }
 
@@ -148,14 +187,46 @@
     border: solid .15rem var(--default-black);
 }
 
+.contact__user-data::-webkit-input-placeholder, .contact__comments::-webkit-input-placeholder{
+    font-size: var(--font-size10);
+    opacity: 0;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.contact__user-data::-moz-placeholder, .contact__comments::-moz-placeholder{
+    font-size: var(--font-size10);
+    opacity: 0;
+    -moz-transition: all .3s;
+    transition: all .3s;
+}
+
+.contact__user-data:-ms-input-placeholder, .contact__comments:-ms-input-placeholder{
+    font-size: var(--font-size10);
+    opacity: 0;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.contact__user-data::-ms-input-placeholder, .contact__comments::-ms-input-placeholder{
+    font-size: var(--font-size10);
+    opacity: 0;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
 .contact__user-data::placeholder, .contact__comments::placeholder{
     font-size: var(--font-size10);
     opacity: 0;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
     transition: all .3s;
 }
 
 .account__label{
     position: absolute;
+    -webkit-transition: all .2s;
+    -o-transition: all .2s;
     transition: all .2s;
     color: var(--default-black);
     z-index: 1;
@@ -175,6 +246,18 @@
     width: 100%;
 }
 
+.contact__user-data:not(:-moz-placeholder-shown).contact__user-data:not(:focus)~.account__label{
+    top:-10%;
+    color: var(--default-black);
+    font-size: var(--font-size10);
+}
+
+.contact__user-data:not(:-ms-input-placeholder).contact__user-data:not(:focus)~.account__label{
+    top:-10%;
+    color: var(--default-black);
+    font-size: var(--font-size10);
+}
+
 .contact__user-data:focus + .account__label , 
 .contact__user-data:not(:placeholder-shown).contact__user-data:not(:focus)~.account__label{
     top:-10%;
@@ -182,9 +265,43 @@
     font-size: var(--font-size10);
 }
 
-.contact__user-data:focus::placeholder, .contact__comments:focus::placeholder{
+.contact__user-data:focus::-webkit-input-placeholder, .contact__comments:focus::-webkit-input-placeholder{
+    opacity: 1;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+}
+
+.contact__user-data:focus::-moz-placeholder, .contact__comments:focus::-moz-placeholder{
     opacity: 1;
     animation-delay: .2s;
+}
+
+.contact__user-data:focus:-ms-input-placeholder, .contact__comments:focus:-ms-input-placeholder{
+    opacity: 1;
+    animation-delay: .2s;
+}
+
+.contact__user-data:focus::-ms-input-placeholder, .contact__comments:focus::-ms-input-placeholder{
+    opacity: 1;
+    animation-delay: .2s;
+}
+
+.contact__user-data:focus::placeholder, .contact__comments:focus::placeholder{
+    opacity: 1;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+}
+
+.contact__comments:not(:-moz-placeholder-shown).contact__comments:not(:focus)~.account__label{
+    top:-8%;
+    color: var(--default-black);
+    font-size: var(--font-size10);
+}
+
+.contact__comments:not(:-ms-input-placeholder).contact__comments:not(:focus)~.account__label{
+    top:-8%;
+    color: var(--default-black);
+    font-size: var(--font-size10);
 }
 
 .contact__comments:focus + .account__label , 
@@ -206,9 +323,15 @@
 .contact__sendsms-container{
     width: 100%;
     margin: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     position: relative;
 }
 
@@ -221,9 +344,15 @@
     color: var(--default-white);
     font-size: var(--font-size12);
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .button__shipping:hover{
@@ -280,7 +409,10 @@
        Contactos da empresa
     \*************************/
     .contacts__info-holder{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     
     .contact__company-info{
