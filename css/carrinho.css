@@ -182,7 +182,7 @@ td img{
     background-color: var(--default-black);
     color: var(--default-white);
     padding: .8rem 1rem;
-    margin-left: 1rem;
+    margin:  .5rem 0 .5rem 1rem;
     border-radius: .4rem;
     font-size: var(--font-size12);
     cursor: pointer;
@@ -262,9 +262,12 @@ td img{
         -webkit-box-pack: space-evenly;
             -ms-flex-pack: space-evenly;
                 justify-content: space-evenly;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     
     .button__actions{
+        width: 100%;
         margin-left: 0;
     }
 
